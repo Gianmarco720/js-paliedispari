@@ -26,7 +26,7 @@ console.log('Il numero del pc è: ', pcNumber);
 
 // sommo il numero dell'utente e quello del pc
 let somma = userNumber + pcNumber;
-console.log('Somma', somma);
+console.log('La somma dei due numeri è: ', somma);
 
 // creo una function() per i numeri pari e dispari
 function pariDispari (numero) {
@@ -35,4 +35,22 @@ function pariDispari (numero) {
     }
 
     return false;
+}
+
+// controllo se la somma dei numeri è pari o dispari
+let even;
+let odd;
+if (pariDispari(somma)) {
+    even = 'Pari';
+    console.log(even);
+} else {
+    odd = 'Dispari';
+    console.log(odd);
+}
+
+// dichiaro il vincitore
+if (pariDispari(somma) && even == userChoice ) {
+    console.log('Hai Vinto!');
+} else if (pariDispari(somma) && even !== userChoice || odd !== userChoice){
+    console.log('Ha Vinto il pc!');
 }
