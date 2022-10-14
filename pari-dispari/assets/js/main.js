@@ -37,9 +37,11 @@ function pariDispari (numero) {
     return false;
 }
 
-// controllo se la somma dei numeri è pari o dispari
+// dichiaro due variabili per le scelte pari e dispari dell'utente
 let even;
 let odd;
+
+// controllo se la somma dei numeri è pari o dispari
 if (pariDispari(somma)) {
     even = 'Pari';
     console.log(even);
