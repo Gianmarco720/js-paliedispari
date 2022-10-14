@@ -27,3 +27,12 @@ console.log('Il numero del pc è: ', pcNumber);
 // sommo il numero dell'utente e quello del pc
 let somma = userNumber + pcNumber;
 console.log('Somma', somma);
+
+// creo una function() per i numeri pari e dispari
+function pariDispari (numero) {
+    if (numero % 2 == 0) {
+        return true;
+    }
+
+    return false;
+}
